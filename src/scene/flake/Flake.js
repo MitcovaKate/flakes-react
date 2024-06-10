@@ -13,4 +13,4 @@ const Flake=()=>{
         </div>
     )
 }
-export default {Flake}
+export  {Flake}
