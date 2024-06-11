@@ -1,22 +1,23 @@
-import "./Flake.css";
-import { randomCoordinate } from "../utils/coords"
-const Flake=()=>{
 
-    let top=0
+import {useState} from 'react'
+import "./Flake.css"
+
+const Flake=({left})=>{
+
+    let [top, setTop] = useState(0)
     const style ={
         top:`${top}%`,
-        left:`${randomCoordinate()}%`
+        left:`${left}%`
     }
     return(
         <>
         <div className="flake"
         style={style}
         >
-
         </div>
         <button 
         onClick={()=>{
-          top++
+          setTop(top+5)
           console.log(top)
         }}>
          DOWN

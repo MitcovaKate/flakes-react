@@ -1,4 +1,3 @@
-const randomCoordinate=()=>{
-    Math.random() * 100
-}
+const randomCoordinate=()=>Math.random() * 100
+
 export {randomCoordinate}
